@@ -1,0 +1,28 @@
+2026-06-07 10:14:53,000- agent - INFO - langsmith_tracker.py:94 - [LangSmith] 追踪未启用 | 如需启用请设置环境变量 LANGCHAIN_TRACING_V2=true 和 LANGCHAIN_API_KEY=<key>
+2026-06-07 10:14:53,051- agent - INFO - auth_service.py:44 - [认证服务] PostgreSQL 连接成功
+2026-06-07 10:14:53,078- agent - INFO - chat_session_service.py:37 - [数据库连接] PostgreSQL 连接成功
+2026-06-07 10:16:00,695- agent - INFO - chat_session_service.py:58 - [会话创建] 新会话创建成功: 6b0c7db2-68c3-440b-be74-ebf5c1282ba7
+2026-06-07 10:16:36,013- agent - INFO - chat_session_service.py:83 - [消息保存] 会话 6b0c7db2-68c3-440b-be74-ebf5c1282ba7 保存消息成功, 角色: user
+2026-06-07 10:16:36,206- agent - INFO - workflow.py:75 - [MultiAgentWorkflow] 多Agent协作系统初始化完成
+2026-06-07 10:16:36,206- agent - INFO - main.py:115 - [API] MultiAgentWorkflow单例创建完成
+2026-06-07 10:16:36,207- agent - INFO - token_tracker.py:52 - [TokenTracker] Token追踪器初始化完成
+2026-06-07 10:16:38,057- agent - DEBUG - token_callback.py:101 - [TokenCallback] supervisor: 无法获取Token数据。响应类型: LLMResult, 可用token相关属性: []
+2026-06-07 10:16:38,057- agent - INFO - supervisor.py:79 - [Supervisor] 意图分类结果: knowledge，用户问题: 扫地机器人作用，手册
+2026-06-07 10:16:38,057- agent - INFO - supervisor.py:88 - [Agent切换] Supervisor -> Knowledge Agent (产品知识专家) | 用户问题: 扫地机器人作用，手册
+2026-06-07 10:16:38,058- agent - INFO - workflow.py:106 - [MultiAgentWorkflow] 路由决策: knowledge，用户问题: 扫地机器人作用，手册
+2026-06-07 10:16:38,058- agent - INFO - workflow.py:125 - [Agent执行] 开始执行 Knowledge Agent (产品知识专家) | 问题: 扫地机器人作用，手册
+2026-06-07 10:16:38,058- agent - INFO - knowledge_agent.py:85 - [KnowledgeAgent] 开始处理产品知识问题: 扫地机器人作用，手册
+2026-06-07 10:16:38,060- agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-06-07 10:16:38,060- agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-06-07 10:16:38,062- agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 扫地机器人作用，手册
+2026-06-07 10:16:40,401- agent - DEBUG - token_callback.py:101 - [TokenCallback] knowledge: 无法获取Token数据。响应类型: LLMResult, 可用token相关属性: []
+2026-06-07 10:16:40,403- agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-06-07 10:16:40,403- agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '扫地机器人的作用和使用手册'}
+2026-06-07 10:16:47,000- agent - DEBUG - token_callback.py:101 - [TokenCallback] knowledge: 无法获取Token数据。响应类型: LLMResult, 可用token相关属性: []
+2026-06-07 10:16:47,002- agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-06-07 10:16:47,008- agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-06-07 10:16:47,008- agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-06-07 10:16:47,008- agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 扫地机器人的作用是自动清扫地面灰尘、毛发等杂物，部分机型兼具拖地功能。使用时需首次充满电并在空旷环境建图，之后可设置清扫区域和禁区；日常使用后应清理防撞条缝隙的毛发线头，并用干软布擦拭机身；选购时应根据户型和家庭情况选择合适吸力（家用建议≥3000Pa）及导航技术（激光导航精准，视觉导航需避免强光）。
+2026-06-07 10:16:57,396- agent - DEBUG - token_callback.py:101 - [TokenCallback] knowledge: 无法获取Token数据。响应类型: LLMResult, 可用token相关属性: []
+2026-06-07 10:16:57,404- agent - INFO - workflow.py:128 - [Agent执行] Knowledge Agent (产品知识专家) 执行完成
+2026-06-07 10:16:57,441- agent - INFO - chat_session_service.py:83 - [消息保存] 会话 6b0c7db2-68c3-440b-be74-ebf5c1282ba7 保存消息成功, 角色: assistant

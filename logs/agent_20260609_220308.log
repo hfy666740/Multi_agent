@@ -1,0 +1,1 @@
+2026-06-09 22:03:21,083- agent - INFO - langsmith_tracker.py:94 - [LangSmith] 追踪未启用 | 如需启用请设置环境变量 LANGCHAIN_TRACING_V2=true 和 LANGCHAIN_API_KEY=<key>

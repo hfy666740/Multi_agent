@@ -1,0 +1,2 @@
+2026-06-07 09:51:53,379- agent - INFO - auth_service.py:44 - [认证服务] PostgreSQL 连接成功
+2026-06-07 09:51:53,503- agent - INFO - chat_session_service.py:37 - [数据库连接] PostgreSQL 连接成功

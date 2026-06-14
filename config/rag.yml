@@ -1,0 +1,15 @@
+chat_model_name: qwen3-max
+embedding_model_name: text-embedding-v4
+
+# 检索模式: hybrid（混合检索）/ semantic（纯语义检索，默认兼容模式）
+retrieval_mode: hybrid
+
+# 混合检索配置
+# rrf_k: RRF（Reciprocal Rank Fusion）算法的k值，默认60
+rrf_k: 60
+
+# 语义检索返回数量
+semantic_k: 3
+
+# 关键词检索返回数量
+keyword_k: 3
