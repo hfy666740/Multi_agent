@@ -6,7 +6,7 @@ services:
     container_name: agent-postgres
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123456
+      POSTGRES_PASSWORD:
       POSTGRES_DB: agent_chat
     volumes:
       - postgres_data:/var/lib/postgresql/data
@@ -25,7 +25,7 @@ services:
       - DB_HOST=postgres
       - DB_PORT=5432
       - DB_USER=postgres
-      - DB_PASSWORD=123456
+      - DB_PASSWORD=
       - DB_NAME=agent_chat
     depends_on:
       postgres:
