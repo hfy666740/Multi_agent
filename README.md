@@ -148,6 +148,10 @@ npm run dev
 ```bash
 docker compose up -d
 ```
+###前端页面展示
+<img width="2504" height="1408" alt="屏幕截图 2026-06-15 092955" src="https://github.com/user-attachments/assets/22fb19fd-e5e6-4aa9-9355-6cc11cd2d5ab" />
+<img width="2513" height="1431" alt="屏幕截图 2026-06-15 092931" src="https://github.com/user-attachments/assets/730c83da-8e34-44cf-a74f-4f6331814fdb" />
+
 
 ## 项目结构
 
@@ -156,25 +160,25 @@ ai-customer-service/
 ├── api/
 │   └── main.py              # FastAPI 后端入口（路由、认证、聊天接口）
 ├── agent/
-│   ├── workflow.py           # 多 Agent 编排器（总入口）
-│   ├── supervisor.py         # Supervisor Agent（意图分类路由）
-│   ├── react_agent.py        # 单 Agent 实现（独立可运行）
+│   ├── workflow.py          
+│   ├── supervisor.py         
+│   ├── react_agent.py        
 │   └── specialists/
-│       ├── knowledge_agent.py  # 知识问答 Agent
-│       ├── weather_agent.py    # 天气查询 Agent
-│       └── report_agent.py     # 报告生成 Agent
+│       ├── knowledge_agent.py  
+│       ├── weather_agent.py    
+│       └── report_agent.py     
 ├── rag/
-│   ├── rag_service.py        # RAG 检索+生成服务
-│   ├── vector_store.py       # ChromaDB 向量存储与检索
-│   ├── hybrid_retriever.py   # 混合检索器（语义+关键词 RRF 融合）
-│   └── keyword_retriever.py  # BM25 关键词检索器
+│   ├── rag_service.py        
+│   ├── vector_store.py       
+│   ├── hybrid_retriever.py 
+│   └── keyword_retriever.py  
 ├── model/
-│   └── factory.py            # LLM / Embedding 模型工厂
+│   └── factory.py            
 ├── models/
-│   └── db_models.py          # 数据库 ORM 模型（SQLAlchemy）
+│   └── db_models.py          
 ├── utils/
-│   ├── token_callback.py     # LangChain 回调自动采集 Token
-│   ├── token_tracker.py      # Token 统计（内存 + 数据库双写）
+│   ├── token_callback.py     
+│   ├── token_tracker.py      
 │   ├── token_stats_service.py # Token 持久化服务
 │   ├── langsmith_tracker.py  # LangSmith 追踪配置
 │   ├── prompt_loader.py      # 提示词统一加载
@@ -194,7 +198,7 @@ ai-customer-service/
 │       ├── stores/           # Pinia 状态管理
 │       ├── router/           # Vue Router 路由
 │       └── api/              # Axios API 封装
-├── .env                      # 环境变量（敏感信息！勿提交）
+├── .env                      
 ├── .env.example              # 环境变量模板
 ├── pyproject.toml            # Python 项目配置与依赖
 ├── docker-compose.yml        # Docker 编排
