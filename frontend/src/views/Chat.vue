@@ -7,7 +7,7 @@
 
     <div class="chat-messages" ref="messagesContainer">
       <div v-if="chatStore.messages.length === 0" class="empty-state">
-        <h2>智扫通智能客服</h2>
+        <h2>产品智能客服</h2>
         <p>开始一段新对话，或从左侧选择历史对话</p>
       </div>
 
