@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28938055/README.md)[Uploa# 智扫通 — 多Agent协作RAG智能客服系统
+[README.md](https://github.com/user-attachments/files/28938055/README.md)[Uploa# 多Agent协作RAG智能客服系统
 
 > 面向扫地机器人领域的智能客服问答平台，支持多 Agent 协作、混合检索 RAG、流式对话、Token 成本监控。
 
